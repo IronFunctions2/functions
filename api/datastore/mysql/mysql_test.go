@@ -4,12 +4,11 @@ import (
 	"bytes"
 	"database/sql"
 	"fmt"
+	"github.com/IronFunctions2/functions/api/datastore/internal/datastoretest"
 	"net/url"
 	"os/exec"
 	"testing"
 	"time"
-
-	"github.com/iron-io/functions/api/datastore/internal/datastoretest"
 )
 
 const tmpMysql = "mysql://root:root@tcp(%v:3307)/funcs"

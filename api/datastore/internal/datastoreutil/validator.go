@@ -2,8 +2,7 @@ package datastoreutil
 
 import (
 	"context"
-
-	"github.com/iron-io/functions/api/models"
+	"github.com/IronFunctions2/functions/api/models"
 )
 
 // Datastore is a copy of models.Datastore, with additional comments on parameter guarantees.

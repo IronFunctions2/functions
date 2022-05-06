@@ -349,3 +349,13 @@ You can get commercial support by contacting [Iron.io](https://iron.io/contact)
 ## Want to contribute to IronFunctions?
 
 See [contributing](CONTRIBUTING.md).
+
+## Things to do until IronFunctions (maybe) is revived as IronFunctions2
+
+- [x] Move from dep dependency Manager to Golangs own Manager
+- [x] Build against go1.17.6 linux/amd64
+- [ ] Fix Tests
+  - [ ] Update database connectors
+  - [ ] Move to a proper Testing framework
+- [ ] Move CI to GitHub Actions
+- [ ] Move build image source to new registry (someday)

@@ -1,9 +1,8 @@
 package datastore
 
 import (
+	"github.com/IronFunctions2/functions/api/datastore/internal/datastoretest"
 	"testing"
-
-	"github.com/iron-io/functions/api/datastore/internal/datastoretest"
 )
 
 func TestDatastore(t *testing.T) {

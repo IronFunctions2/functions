@@ -2,6 +2,8 @@ package bolt
 
 import (
 	"encoding/json"
+	"github.com/IronFunctions2/functions/api/datastore/internal/datastoreutil"
+	"github.com/IronFunctions2/functions/api/models"
 	"net/url"
 	"os"
 	"path/filepath"
@@ -14,8 +16,6 @@ import (
 
 	"github.com/Sirupsen/logrus"
 	"github.com/boltdb/bolt"
-	"github.com/iron-io/functions/api/datastore/internal/datastoreutil"
-	"github.com/iron-io/functions/api/models"
 )
 
 type BoltDatastore struct {

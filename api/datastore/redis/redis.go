@@ -3,6 +3,8 @@ package redis
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/IronFunctions2/functions/api/datastore/internal/datastoreutil"
+	"github.com/IronFunctions2/functions/api/models"
 	"net/url"
 	"regexp"
 	"strings"
@@ -12,8 +14,6 @@ import (
 
 	"github.com/Sirupsen/logrus"
 	"github.com/garyburd/redigo/redis"
-	"github.com/iron-io/functions/api/datastore/internal/datastoreutil"
-	"github.com/iron-io/functions/api/models"
 )
 
 type RedisDataStore struct {

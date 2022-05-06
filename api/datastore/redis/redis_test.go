@@ -3,6 +3,7 @@ package redis
 import (
 	"bytes"
 	"fmt"
+	"github.com/IronFunctions2/functions/api/datastore/internal/datastoretest"
 	"log"
 	"net/url"
 	"os/exec"
@@ -10,7 +11,6 @@ import (
 	"time"
 
 	"github.com/garyburd/redigo/redis"
-	"github.com/iron-io/functions/api/datastore/internal/datastoretest"
 )
 
 const tmpRedis = "redis://%v:6301/"

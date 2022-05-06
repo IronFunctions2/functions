@@ -3,10 +3,9 @@ package datastoretest
 import (
 	"bytes"
 	"context"
+	"github.com/IronFunctions2/functions/api/models"
 	"log"
 	"testing"
-
-	"github.com/iron-io/functions/api/models"
 
 	"net/http"
 	"net/url"
@@ -192,7 +191,7 @@ func Test(t *testing.T, ds models.Datastore) {
 		_, err := ds.InsertApp(ctx, testApp)
 		if err != nil && err != models.ErrAppsAlreadyExists {
 			t.Log(buf.String())
-			t.Fatalf("Test InsertRoute Prep: failed to insert app: ", err)
+			t.Fatalf("Test InsertRoute Prep: failed to insert app: %s", err)
 		}
 
 		// Testing insert route
